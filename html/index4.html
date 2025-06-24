@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <p>Multimedia</p>
-    <h1>
-        audio files
-    </h1>
+  </head>
+  <body>
+    <h1>Images and Multimedia</h1>
+    <h3>Images</h3>
+    <img src="officedesk.jpg" width="500px" alt="Staff" />
+    <figure>
+      <img src="officedesk.jpg" width="500px" alt="Staff" />
+      <figcaption>Preparing for the AGM</figcaption>
+    </figure>
+    <h3>Audio Files</h3>
     <audio controls>
-        <source src="boot.mp3"/>
+      <source src="boot.mp3" />
     </audio>
-    <p> video file</p>
-    <video controls>
-        <source src="st1.mp4"/>
-        <track
+    <audio controls>
+      <source src="boot.mp3" />
+    </audio>
+    <audio controls>
+      <source src="boot.mp3" />
+    </audio>
+    <audio controls>
+      <source src="boot.mp3" />
+    </audio>
+    <h3>Video Files</h3>
+    <video height="200px" width="300px" controls>
+      <source src="st1.mp4" />
+      <track
         src="subtitles1.vtt"
         kind="subtitles"
-        label="hindi"
-        />
+        srclang="en"
+        label="English"
+      />
+      <track src="subtitles2.vtt" kind="subtitles" srclang="in" label="Hindi" />
     </video>
-</body>
+    <video height="200px" width="300px" controls>
+      <source src="st1.mp4" />
+    </video>
+    <video height="200px" width="300px" autoplay muted>
+      <source src="st1.mp4" />
+    </video>
+    <hr />
+    <svg width="900" height="900">
+      <circle
+        cx="250"
+        cy="400"
+        r="100"
+        stroke="red"
+        stroke-width="5"
+        fill="pink"
+      />
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="red" />
+      <text fill="black" font-size="45" font-family="Verdana" x="50" y="86">
+        ZEE Cinema
+      </text>
+    </svg>
+  </body>
 </html>
